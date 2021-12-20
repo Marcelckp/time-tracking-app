@@ -1,0 +1,144 @@
+.report__div h1 {
+    color: rgb(176, 176, 176);
+    font-weight: 300;
+    font-size: 1rem;
+
+}
+
+.name__div h1 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+.circle__backdrop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.Image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 93.5%;
+    height: 93.5%;
+}
+
+.content__container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.top__div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5746ea;
+    border-radius: 17px;
+    padding: 20px 15px;
+    z-index: 2;
+}
+
+/*====================================================== */
+/* bottom div section */
+
+.bottom__div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1d204b;
+    border-radius: 17px;
+    padding: 10px 0;
+    padding-top: 40px;
+    margin-top: -40px;
+    z-index: 1;
+}
+
+.bottom__content {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 5px
+    
+}
+
+.daily__div,.weekly__div,.monthly__div {
+    padding: 10px;
+    padding-left: 16px;
+    font-size: .65rem;
+    color: #6b70a9
+}
+
+.daily, .weekly, .monthly{
+    font-weight: 400;
+}
+
+/* .bottom__content h1 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #6b70a9
+} */
+
+.active {
+    color: white;
+}
+
+.Main__Head{
+  margin-bottom: 25px;
+  z-index: 30;
+}
+
+.daily:hover, .weekly:hover, .monthly:hover{
+    color: white;
+}
+
+/* ================================= */
+/* Media Query */
+
+@media screen and (min-width: 1000px) {
+    
+    .Main__Head{
+        /* width: 20%; */
+        margin-right: 30px;
+        margin-left: 40px;
+        width: 16rem;
+    }
+    
+    .report__div {
+        margin-top: 25px;
+    }
+
+    .name__div h1 {
+        font-size: 2.2em,
+    
+    }
+
+    .bottom__content{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .content__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    
+}
